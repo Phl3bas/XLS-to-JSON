@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XLS to JSON converter</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <h1>XLS to JSON Converter</h1>
+    <input
+      type="file"
+      name="xlsFileInput"
+      id="fileUpload"
+      accept=".xls, .xlsx"
+    />
+    <button id="btn" name="convertButton">Convert</button>
+    <button id="copy">Copy to Clipboard</button>
+    <button id="clear">Clear</button>
+    <pre><code class="language-json"></code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
